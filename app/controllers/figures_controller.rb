@@ -17,6 +17,12 @@ class FiguresController < ApplicationController
     erb :'/figures/show'
   end
 
+  get '/figures/:id/edit' do
+    @landmark = Landmark.find_by_id(params[:id])
+    #binding.pry
+    erb :'/landmarks/edit'
+  end
+
   post '/figures' do
     #binding.pry
     @figure = Figure.create(name: params[:figure_name])
