@@ -27,7 +27,7 @@ class FiguresController < ApplicationController
 
   post '/figures/:id' do
     binding.pry
-    @figure = Figure.find_by(id: params[:figure_name])
+    @figure = Figure.find_by(id: params[:id])
     if params.keys.include?("title") && !params[:title][:name].blank?
       @title = Title.find_or_create_by(name: params[:title][:name])
       @figure.titles << @title
