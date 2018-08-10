@@ -35,6 +35,13 @@ class FiguresController < ApplicationController
       @figure.save
     end
 
+    if params.keys.include?("landmark") && !params[:landmark][:name].blank?
+      @landmark = Landmark.find_or_create_by(name: params[:landmark][:name])
+      @figure.landmarks << @landmark
+      @landmark.save
+
+
+
   end
 
   post '/figures' do
