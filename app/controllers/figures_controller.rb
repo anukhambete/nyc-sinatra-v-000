@@ -39,6 +39,8 @@ class FiguresController < ApplicationController
       @landmark = Landmark.find_or_create_by(name: params[:landmark][:name])
       @figure.landmarks << @landmark
       @landmark.save
+      @figure.save
+    end
 
 
 
