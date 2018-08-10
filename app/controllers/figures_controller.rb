@@ -24,7 +24,7 @@ class FiguresController < ApplicationController
   end
 
   post '/figures/:id' do
-    #binding.pry
+    binding.pry
 
   end
 
