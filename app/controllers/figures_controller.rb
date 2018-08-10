@@ -25,10 +25,7 @@ class FiguresController < ApplicationController
 
   post '/landmarks/:id' do
     #binding.pry
-    @landmark = Landmark.find_by_id(params[:id])
-    @landmark.update(name: params[:name], year_completed: params[:year_completed])
-    @landmark.save
-    redirect to "/landmarks/#{@landmark.id}"
+    
   end
 
   post '/figures' do
