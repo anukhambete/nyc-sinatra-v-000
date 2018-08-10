@@ -43,7 +43,6 @@ class FiguresController < ApplicationController
     end
 
 
-
   end
 
   post '/figures' do
