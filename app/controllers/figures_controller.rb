@@ -18,7 +18,7 @@ class FiguresController < ApplicationController
   end
 
   get '/figures/:id/edit' do
-    @landmark = Landmark.find_by_id(params[:id])
+    @figure = Landmark.find_by_id(params[:id])
     #binding.pry
     erb :'/landmarks/edit'
   end
