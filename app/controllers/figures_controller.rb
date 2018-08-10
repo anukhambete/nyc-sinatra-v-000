@@ -42,7 +42,7 @@ class FiguresController < ApplicationController
       @figure.save
     end
     @figure.save
-    redirect to "/figures/#{@landmark.id}"
+    redirect to "/figures/#{@figure.id}"
   end
 
   post '/figures' do
