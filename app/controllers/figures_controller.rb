@@ -41,7 +41,7 @@ class FiguresController < ApplicationController
       @landmark.save
       @figure.save
     end
-
+    @figure.save
 
   end
 
