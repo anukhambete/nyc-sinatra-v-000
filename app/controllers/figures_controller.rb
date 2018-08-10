@@ -27,7 +27,7 @@ class FiguresController < ApplicationController
 
   post '/figures/:id' do
     binding.pry
-    @figure = Figure.find_by(name: params[:name])
+    @figure = Figure.find_by(name: params[:figure_name])
 
   end
 
