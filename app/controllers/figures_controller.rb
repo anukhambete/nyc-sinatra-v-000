@@ -23,9 +23,9 @@ class FiguresController < ApplicationController
     erb :'/figures/edit'
   end
 
-  post '/landmarks/:id' do
+  post '/figures/:id' do
     #binding.pry
-    
+
   end
 
   post '/figures' do
