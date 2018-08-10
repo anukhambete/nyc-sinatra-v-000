@@ -33,6 +33,7 @@ class FiguresController < ApplicationController
       @figure.titles << @title
       @title.save
       @figure.save
+    end
 
   end
 
